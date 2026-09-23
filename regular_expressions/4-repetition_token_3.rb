@@ -1,2 +1,7 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/hbt{0,4}n/).join
+
+if ARGV[0] =~ /hbt*n/
+  puts "Match"
+else
+  puts "No match"
+end
